@@ -1,3 +1,9 @@
+#
+# This script can be used to download a type of geometry file
+# for each UK parliamentary constituency from MapIt
+# and then save them all in a single folder
+#
+
 import shutil
 import requests
 import json

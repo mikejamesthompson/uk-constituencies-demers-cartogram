@@ -1,3 +1,10 @@
+#
+# This script is used to create a single GeoJSON file of Features 
+# representing the centroids of UK parliamentary constituencies
+# constituencies with no polygon data are recorded in no_data and 
+# printed at the end.
+#
+
 import shutil
 import requests
 import json
@@ -9,6 +16,9 @@ output_file = data_directory + "uk-constituency-centroids.json"
 
 # Create list to contain GeoJSON feature definition for each constituency
 features = []
+
+# Create list to record which areas have no polygon data
+no_data = []
 
 # Request parameters
 mapit_domain = "http://mapit.mysociety.org"
@@ -35,15 +45,15 @@ data = json.loads(response.text)
 mapit_path  = "/area/"
 geometry_extension = "/geometry"
 
-# Loop through areas and save KML files
+# Loop through areas and save geometry files
 for area_id, area_data in data.iteritems():
-
+	
 	url = mapit_domain + mapit_path + area_id + geometry_extension
 
 	print url + ", " + area_data["name"]
 
 	# Play nice with rate limiting
-	time.sleep(1.3)
+	time.sleep(0.5)
 	
 	# Request file
 	try:
@@ -55,6 +65,7 @@ for area_id, area_data in data.iteritems():
 	# Debug and exit if request failed
 	if( response.status_code != requests.codes.ok ):
 		print 'Request failed for ' + area_id + ': ' + str(response.status_code) + ', ' + response.text
+		no_data.append((area_id, area_data['name']))
 		area_coordinates = None
 	else:
 		# Load response into JSON object
@@ -76,7 +87,6 @@ for area_id, area_data in data.iteritems():
 
 	features.append(area_feature)
 
-
 output = {	
 	"type" : "FeatureCollection",
 	"features": features 
@@ -84,3 +94,5 @@ output = {
 
 with open(output_file, 'wb') as f:
     json.dump(output, f, indent=3)
+
+print no_data
