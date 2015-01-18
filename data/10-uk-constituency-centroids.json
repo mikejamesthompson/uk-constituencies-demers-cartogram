@@ -1,0 +1,155 @@
+{
+   "type": "FeatureCollection", 
+   "features": [
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -2.7126441106270276,
+               52.167057126062595
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000847", 
+         "properties": {
+            "mapit_id": "65642", 
+            "name": "North Herefordshire"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -1.737738578688464,
+               51.53326266077494
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000947", 
+         "properties": {
+            "mapit_id": "65800", 
+            "name": "South Swindon"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -0.6277748929013103,
+               51.68047761133099
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000631", 
+         "properties": {
+            "mapit_id": "65801", 
+            "name": "Chesham and Amersham"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -1.5566127906847051,
+               54.531998523902274
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000658", 
+         "properties": {
+            "mapit_id": "65802", 
+            "name": "Darlington"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -0.26660276628083635,
+               51.33028861977168
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000694", 
+         "properties": {
+            "mapit_id": "65803", 
+            "name": "Epsom and Ewell"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -1.9085892028079197,
+               52.423642401928134
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000567", 
+         "properties": {
+            "mapit_id": "65804", 
+            "name": "Birmingham, Selly Oak"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -1.7125069693764345,
+               54.932148218357305
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000574", 
+         "properties": {
+            "mapit_id": "65805", 
+            "name": "Blaydon"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -2.1066134018987737,
+               52.522239206550836
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000671", 
+         "properties": {
+            "mapit_id": "65806", 
+            "name": "Dudley North"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -1.0865489905969359,
+               52.646893506586515
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000782", 
+         "properties": {
+            "mapit_id": "65807", 
+            "name": "Leicester East"
+         }
+      }, 
+      {
+         "geometry": {
+            "type": "Point", 
+            "coordinates": [
+               -0.09153096821456604,
+               51.44418301333009
+            ]
+         }, 
+         "type": "Feature", 
+         "id": "E14000673", 
+         "properties": {
+            "mapit_id": "65808", 
+            "name": "Dulwich and West Norwood"
+         }
+      }
+   ]
+}
